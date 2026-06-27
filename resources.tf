@@ -17,28 +17,13 @@ module "kong" {
   depends_on = [module.httpd]
 }
 
-module "minio" {
-  source = "./modules/minio"
+module "terrakube" {
+  source = "./modules/terrakube"
   depends_on = [module.kong]
-}
-
-module "velero" {
-  source = "./modules/velero"
-  depends_on = [module.minio]
-}
-
-module "velero-ui" {
-  source = "./modules/velero-ui"
-  depends_on = [module.velero]
 }
 
 module "ingress" {
   source = "./modules/ingress"
-  depends_on = [module.velero-ui]
-}
-
-module "scheduler" {
-  source = "./modules/scheduler"
-  depends_on = [module.ingress]
+  depends_on = [module.terrakube]
 }
 
