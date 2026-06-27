@@ -1,0 +1,19 @@
+security:
+  useOpenLDAP: false
+  adminGroup: "TerrakubeAdmin"
+  dexClientId: "terrakube"
+  dexIssuerUri: "https://terrakube-api.appflex.io/dex"
+
+dex:
+  config:
+    issuer: https://terrakube-api.appflex.io/dex
+  github:
+    existingSecret: terrakube-dex-github
+
+storage:
+  defaultStorage: false
+  minio:
+    accessKey: "root"
+    secretKey: "q1w2e3r4100@"
+    bucketName: "terrakube"
+    endpoint: "http://minio.default.svc.cluster.local:9000"
