@@ -1,7 +1,8 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3c58dbaf-3fff-4f65-822e-2fa1f16b8913" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/32bb0732-1328-4f1c-926f-e4745c8f72ef" />
 
 
-## AWS | EKS BluePrint Disaster Recovery
+
+## AWS | EKS BluePrint Terrakube
 Provisioning an Amazon Elastic Kubernetes Service (EKS) cluster using Terraform allows you to define your entire infrastructure (VPC, subnets, IAM roles, and the cluster itself) as code, ensuring repeatable, version-controlled, and automated deployments.
 
 
